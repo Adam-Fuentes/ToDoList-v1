@@ -51,6 +51,10 @@ app.get("/work", function(req, res){
     res.render("list", {listTitle: "Work List", newListItems: workItems});
 });
 
+app.get("/about", function(req, res){
+    res.render("about");
+})
+
 app.listen(3000, function(){
     console.log("Server is running in Port 3000.");
 });
